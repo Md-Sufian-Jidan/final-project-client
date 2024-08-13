@@ -2,8 +2,9 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const navOptions = <>
-        <li><NavLink className={({ isActive }) => isActive ? "p-3 border-0 border-b-2 border-b-green-500 mr-2 font-bold" : "p-3 mr-2"} to={'/'}>Home</NavLink></li>
-        <li><NavLink className={({ isActive }) => isActive ? "p-3 border-0 border-b-2 border-b-green-500 mr-2 font-bold" : "p-3 mr-2"} to={'/about'}>About</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "p-3 border-0 border-b-2 border-b-green-500 mr-2 font-bold text-pink-500" : "p-3 mr-2"} to={'/'}>Home</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "p-3 border-0 border-b-2 border-b-green-500 mr-2 font-bold text-pink-500" : "p-3 mr-2"} to={'/menu'}>Our Menu</NavLink></li>
+        <li><NavLink className={({ isActive }) => isActive ? "p-3 border-0 border-b-2 border-b-green-500 mr-2 font-bold text-pink-500" : "p-3 mr-2"} to={'/about'}>About</NavLink></li>
     </>
     return (
         <div className="navbar fixed z-50 bg-opacity-30 max-w-screen-xl text-white bg-red-300">
